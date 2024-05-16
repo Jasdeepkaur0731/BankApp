@@ -1,0 +1,189 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.App-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #4A148C; /* Adding purple background color */
+  padding: 20px 30px; /* Increased size */
+  color: white;
+}
+
+.App-nav h1 {
+  margin: 0;
+}
+
+.App-hero {
+  background: url('./hero-background.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 50px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px;
+}
+
+.hero-content h2 {
+  margin: 0;
+  font-size: 36px; /* Adjusted font size */
+  font-family: 'Arial', sans-serif; /* Professional font */
+}
+
+.hero-content p {
+  font-size: 24px; /* Adjusted font size */
+  margin-top: 10px;
+  font-family: 'Arial', sans-serif; /* Professional font */
+}
+
+.hero-content blockquote {
+  font-style: italic;
+  margin: 20px 0 0 0;
+  text-align: center;
+  font-size: 20px; /* Adjusted font size */
+  font-family: 'Arial', sans-serif; /* Professional font */
+}
+
+.App-welcome {
+  margin: 20px 0;
+  color: purple; /* Changing the text color to purple */
+  font-family: 'Courier New', Courier, monospace; /* Changing the font to Courier New */
+  font-size: 24px; /* Adjusting font size */
+  font-style: italic;
+}
+
+.App-content-box {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  overflow-y: auto; /* Make content scrollable */
+}
+
+.App-content {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow for a 3D effect */
+  width: 500px; /* Increase width */
+  text-align: left;
+  border: 2px solid #4A148C; /* Adding border to the content box */
+  overflow-y: auto; /* Make content scrollable */
+  max-height: 500px; /* Limit the height to make it scrollable */
+  margin-bottom: 20px; /* Add some space from the footer */
+}
+
+.App-account-info {
+  margin-bottom: 20px;
+}
+
+.App-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4A148C; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #6a1b9a; /* Darker shade on hover */
+}
+
+form {
+  margin: 20px;
+}
+
+form div {
+  margin: 10px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.App-footer {
+  background-color: #4A148C;
+  color: white;
+  padding: 10px; /* Decreased size */
+  text-align: center;
+  width: 100%;
+}
+
+.App-footer a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.App-footer a:hover {
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #4A148C;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #4A148C;
+  color: white;
+}
+
+.amount {
+  color: red;
+  font-weight: bold;
+}
+
+table {
+  border: 1px solid #4A148C; /* Add border around the entire table */
+  margin-bottom: 20px; /* Add some space from the footer */
+  width: 100%; /* Increase table width */
+}
+
+.account-balance {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: black;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
