@@ -1,27 +1,28 @@
-// src/components/TransactionHistory.js
 import React from 'react';
 import './TransactionHistory.css';
 
-function TransactionHistory({ transactions }) {
+function Transactions({ transactions }) {
   return (
-    <div>
+    <div className="transactions-container">
       <h2>Transaction History</h2>
       <table className="transaction-table">
         <thead>
           <tr>
             <th>Date & Time</th>
-            <th>Account</th>
-            <th>Amount</th>
             <th>Type</th>
+            <th>Amount</th>
+            <th>From Account</th>
+            <th>To Account</th>
           </tr>
         </thead>
         <tbody>
           {transactions.map((transaction, index) => (
             <tr key={index}>
               <td>{transaction.date}</td>
-              <td>{transaction.accountType}</td>
-              <td className="amount">{transaction.amount}</td>
               <td>{transaction.type}</td>
+              <td>${transaction.amount.toFixed(2)}</td>
+              <td>{transaction.fromAccount || '-'}</td>
+              <td>{transaction.toAccount || '-'}</td>
             </tr>
           ))}
         </tbody>
@@ -30,4 +31,4 @@ function TransactionHistory({ transactions }) {
   );
 }
 
-export default TransactionHistory;
+export default Transactions;

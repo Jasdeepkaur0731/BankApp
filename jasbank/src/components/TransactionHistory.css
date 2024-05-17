@@ -1,4 +1,7 @@
-/* src/components/TransactionHistory.css */
+.transactions-container {
+  padding: 20px;
+}
+
 .transaction-table {
   width: 100%;
   border-collapse: collapse;
